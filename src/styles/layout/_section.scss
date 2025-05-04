@@ -1,0 +1,5 @@
+@use '../abstracts/variables' as *;
+
+.section {
+	padding-block: $section-padding-y;
+}
