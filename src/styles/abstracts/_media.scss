@@ -32,7 +32,7 @@ $mobile: 767px;
 }
 
 @mixin mobile-above {
-	@media (min-width: $tablet-above) {
+	@media (min-width: $mobile-above) {
 		@content;
 	}
 }
