@@ -1,5 +1,18 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/media' as *;
 
 .section {
 	padding-block: $section-padding-y;
+
+	@include desktop {
+		padding-block: 50px;
+	}
+
+	@include mobile {
+		padding-block: 30px;
+	}
+
+	&--hidden-x {
+		overflow-x: hidden;
+	}
 }
