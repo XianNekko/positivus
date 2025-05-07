@@ -14,8 +14,12 @@
 @use './components/burger-button';
 @use './components/mobile-overlay';
 @use './components/cross-button';
+@use './components/puddle-bg';
+@use './components/service-card';
+@use './components/banner';
 
 // Layout
 @use './layout/header';
 @use './layout/section';
 @use './layout/hero';
+@use './layout/services';
