@@ -19,7 +19,8 @@
 @use './components/banner';
 
 // Layout
-@use './layout/header';
+@use './layout/grid';
 @use './layout/section';
+@use './layout/header';
 @use './layout/hero';
 @use './layout/services';

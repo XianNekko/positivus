@@ -1,0 +1,71 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/media' as *;
+
+.service-card {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 30px;
+	min-height: 310px;
+	padding: 50px;
+	background-color: $color-gray;
+	border: $border;
+	border-radius: $border-radius-large;
+	box-shadow: $shadow;
+
+	&--accent-bg {
+		background-color: $color-accent;
+	}
+
+	&--dark-bg {
+		background-color: $color-dark;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		row-gap: 30px;
+	}
+
+	&__image {
+		align-self: center;
+	}
+
+	&__title {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+
+	&__link {
+		--serviceCardLinkIconColor: #b9ff66;
+
+		display: inline-flex;
+		align-items: center;
+		column-gap: 15px;
+		font-size: 20px;
+
+		@include hover {
+			opacity: 0.7;
+		}
+
+		&--light {
+			--serviceCardLinkIconColor: #191a23;
+
+			color: $color-light;
+		}
+
+		&-icon-wrapper {
+			@include flex-center;
+			@include square(41px);
+
+			background-color: currentColor;
+			border-radius: 50%;
+
+			svg {
+				color: var(--serviceCardLinkIconColor);
+			}
+		}
+	}
+}
